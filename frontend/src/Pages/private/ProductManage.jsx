@@ -35,7 +35,8 @@ export default function ProductManage() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ ...formData })
+        body: JSON.stringify({ ...formData }),
+        files
       });
       console.log(await res.json());
     } catch (error) {

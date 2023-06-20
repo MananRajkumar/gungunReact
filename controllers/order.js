@@ -1,3 +1,4 @@
+const Orders = require('../models/orderModel');
 async function getCheckoutPage(req, res) {
     try {
        res.status(200).json({
@@ -34,6 +35,7 @@ async function getDeliveryPage(req, res) {
 
 async function confirmDelivery(req, res) {
     try {
+        
         res.status(200).json({
             success: true
         });
